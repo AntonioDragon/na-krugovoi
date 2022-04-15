@@ -1,0 +1,49 @@
+.section-head {
+  padding: 0 130px;
+  @media (max-width: 992px) {
+    margin-left: 12px;
+    padding: 0;
+  }
+  &__title {
+    margin: 0;
+    font-family: 'Bon-Foyage';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 127px;
+    line-height: 100%;
+    color: rgba($gray, 0.2);
+    @media (max-width: 992px) {
+      font-size: 75px;
+    }
+    @media (max-width: 575px) {
+      font-size: 64px;
+    }
+  }
+  &__sub-title {
+    margin: -60px 0 0 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 100%;
+    color: $text-primary;
+    @media (max-width: 992px) {
+      margin-top: -35px;
+      font-size: 32px;
+    }
+    @media (max-width: 575px) {
+      margin-top: -40px;
+      font-size: 28px;
+    }
+  }
+  &__sub-text {
+    margin-top: 35px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba($text-gray, 0.8);
+    @media (max-width: 575px) {
+      font-size: 14px;
+    }
+  }
+}

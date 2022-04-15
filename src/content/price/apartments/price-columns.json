@@ -1,0 +1,22 @@
+[
+  {
+    "Header": "",
+    "accessor": "col1"
+  },
+  {
+    "Header": "Rooms",
+    "accessor": "col2"
+  },
+  {
+    "Header": "Places",
+    "accessor": "col3"
+  },
+  {
+    "Header": "Price",
+    "accessor": "col4"
+  },
+  {
+    "Header": "Brief info",
+    "accessor": "col5"
+  }
+]

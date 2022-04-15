@@ -1,0 +1,12 @@
+html,
+body {
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $text-dark;
+}
+
+a {
+  text-decoration: none;
+}

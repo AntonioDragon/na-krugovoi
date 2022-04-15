@@ -1,0 +1,37 @@
+.typography {
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  border-radius: 5px;
+  &__icon {
+    margin-right: 10px;
+    & * {
+      fill: $black;
+    }
+  }
+  &__text {
+    text-align: center;
+    color: $black;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  &__link {
+  }
+  &--warning {
+    background-color: $warning;
+    border-color: $border-warning;
+    & .typography__text {
+      color: $text-warning;
+    }
+    & .typography__icon {
+      & * {
+        fill: $text-warning;
+      }
+    }
+  }
+}

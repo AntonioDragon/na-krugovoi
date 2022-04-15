@@ -1,0 +1,109 @@
+.header-nav {
+  position: fixed;
+  z-index: 5;
+  background-color: $white;
+  box-sizing: border-box;
+  padding: 24px 20px;
+  max-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  @media (max-width: 992px) {
+    position: fixed;
+    height: 80px;
+    padding: 0;
+    max-width: none;
+    width: 100%;
+    display: block;
+  }
+  &__wrapper {
+    @media (max-width: 992px) {
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: 20px 12px;
+      background-color: $white;
+      z-index: 3;
+    }
+  }
+  &__links {
+    margin-top: -33px;
+    @media (max-width: 992px) {
+      box-sizing: border-box;
+      position: absolute;
+      bottom: 336px;
+      z-index: -1;
+      left: 0;
+      padding: 0 40px;
+      display: block;
+      height: 336px;
+      width: 100%;
+      transition: 0.5s bottom ease-out;
+      background-color: $white;
+    }
+  }
+  &__link-section {
+    margin-top: 30px;
+  }
+  &__link-title {
+    margin-top: 0;
+    display: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: $primary;
+    @media (max-width: 992px) {
+      display: block;
+      margin-bottom: 25px;
+    }
+  }
+  &__link {
+    margin-bottom: 15px;
+    cursor: pointer;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-weight: 600;
+    line-height: 100%;
+    color: $text-gray;
+    font-size: 12px;
+    transition: 0.3s opacity ease-out;
+    &:hover {
+      opacity: 0.6;
+    }
+    @media (max-width: 992px) {
+      writing-mode: horizontal-tb;
+      display: flex;
+      align-items: center;
+      transform: rotate(0deg);
+    }
+  }
+  &__link-icon {
+    cursor: pointer;
+    display: none;
+    &:hover {
+      opacity: 0.8;
+    }
+    @media (max-width: 992px) {
+      display: block;
+      margin-right: 29px;
+    }
+  }
+  &__button {
+    display: none;
+    @media (max-width: 992px) {
+      display: block;
+      margin-top: 40px;
+    }
+  }
+  @media (max-width: 992px) {
+    &.is-active {
+      & .header-nav__links {
+        bottom: -336px;
+      }
+    }
+  }
+}

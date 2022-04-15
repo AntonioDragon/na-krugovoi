@@ -1,0 +1,15 @@
+.our-apartments {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 120px;
+  &__wrapper {
+    position: relative;
+    margin-top: 20px;
+    @media (min-width: 992px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+}

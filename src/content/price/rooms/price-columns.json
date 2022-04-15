@@ -1,0 +1,18 @@
+[
+  {
+    "Header": "№",
+    "accessor": "col1"
+  },
+  {
+    "Header": "Number of beds",
+    "accessor": "col2"
+  },
+  {
+    "Header": "Price",
+    "accessor": "col3"
+  },
+  {
+    "Header": "Brief info",
+    "accessor": "col4"
+  }
+]

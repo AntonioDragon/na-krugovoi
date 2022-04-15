@@ -1,0 +1,98 @@
+.experience {
+  position: relative;
+  padding-left: 194px;
+  @media (max-width: 1200px) {
+    padding-left: 85px;
+  }
+  @media (max-width: 992px) {
+    padding: 0px 12px;
+  }
+  &__title {
+    font-family: 'Bon-Foyage';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 127px;
+    line-height: 100%;
+    color: $text-primary;
+    @media (max-width: 1200px) {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 80px;
+      line-height: 80%;
+    }
+    @media (max-width: 992px) {
+      display: none;
+    }
+    &--first-part {
+      display: inline;
+      @media (min-width: 920px) {
+        display: block;
+      }
+    }
+    &--second-part {
+      display: inline;
+
+      @media (min-width: 1100px) {
+        padding-left: 85px;
+      }
+      @media (min-width: 1250px) {
+        display: block;
+        padding-left: 194px;
+      }
+    }
+    &--full {
+      display: none;
+      @media (max-width: 992px) {
+        display: block;
+      }
+    }
+  }
+  &__sub-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    opacity: 0.8;
+    color: $text-gray;
+  }
+  &__typography-wrapper {
+    position: relative;
+    max-width: 786px;
+    margin: 0 auto;
+  }
+  &__typography-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    opacity: 0.8;
+    color: $text-gray;
+  }
+  &__typography-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    opacity: 0.8;
+    color: $text-gray;
+  }
+  &__decorate-hair {
+    position: absolute;
+    right: -88px;
+    top: -15px;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+  &__decorate-feather {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @media (max-width: 992px) {
+      top: auto;
+      bottom: 210px;
+      left: -100px;
+      width: 400px;
+    }
+  }
+}
