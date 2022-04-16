@@ -76,23 +76,4 @@
     opacity: 0.8;
     color: $text-gray;
   }
-  &__decorate-hair {
-    position: absolute;
-    right: -88px;
-    top: -15px;
-    @media (max-width: 1200px) {
-      display: none;
-    }
-  }
-  &__decorate-feather {
-    position: absolute;
-    top: 0;
-    left: 0;
-    @media (max-width: 992px) {
-      top: auto;
-      bottom: 210px;
-      left: -100px;
-      width: 400px;
-    }
-  }
 }

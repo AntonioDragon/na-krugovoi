@@ -1,9 +1,8 @@
 import dynamic from 'next/dynamic'
+import {useTranslation} from 'react-i18next'
 import SectionHead from '../SectionHead'
 import OurRoom from '../ui/card/OurRoomCard'
 import WarningTypography from '../ui/typography/WarningTypography'
-import roomsContent from '../../content/our-rooms/rooms.json'
-import roomsCardsContent from '../../content/our-rooms/rooms-card.json'
 
 const SliderWrapper = dynamic(async () => import('../slider/SliderWrapper'), {
   ssr: false
@@ -29,22 +28,27 @@ const options = {
   dotListClass: 'our-rooms__slider-dots'
 }
 
-const OurRooms = () => {
+const OurRooms = ({onSetActiveSlider}) => {
+  const {t} = useTranslation()
   return (
-    <section className='our-rooms'>
+    <section className='our-rooms' id='our-rooms'>
       <SectionHead
-        title={roomsContent.title}
-        subTitle={roomsContent.subTitle}
-        subText={roomsContent.subText}
+        title={t('ourRooms').title}
+        subTitle={t('ourRooms').subTitle}
+        subText={t('ourRooms').subText}
       />
-      <WarningTypography typography={roomsContent.typography} />
+      <WarningTypography typography={t('ourRooms').typography} />
       <SliderWrapper
         wrapperClass={'our-rooms__wrapper'}
         sliderOptions={options}
         widthChanged={992}
       >
-        {roomsCardsContent.map((room) => (
-          <OurRoom key={room.id} {...room} />
+        {t('ourRoomsCards').map((room) => (
+          <OurRoom
+            onSetActiveSlider={onSetActiveSlider}
+            key={room.id}
+            {...room}
+          />
         ))}
       </SliderWrapper>
     </section>

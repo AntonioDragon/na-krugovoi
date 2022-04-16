@@ -1,24 +1,23 @@
 import SectionHead from '../SectionHead'
 import AppTable from '../ui/table/AppTable'
-import PriceContent from '../../content/price/price.json'
-import PriceApartmentsColumns from '../../content/price/apartments/price-columns.json'
-import PriceApartmentsData from '../../content/price/apartments/price-data.json'
-import PriceRoomColumns from '../../content/price/rooms/price-columns.json'
-import PriceRoomData from '../../content/price/rooms/price-data.json'
+import {useTranslation} from 'react-i18next'
 
 const Price = () => {
+  const {t} = useTranslation()
   return (
-    <section className='price'>
+    <section className='price' id='price'>
       <SectionHead
-        title={PriceContent.title}
-        subTitle={PriceContent.subTitle}
-        subText={PriceContent.subText}
+        title={t('price').title}
+        subTitle={t('price').subTitle}
+        subText={t('price').subText}
       />
-
-      <h3></h3>
-      <AppTable columns={PriceRoomColumns} data={PriceRoomData} />
-      <h3></h3>
-      <AppTable columns={PriceApartmentsColumns} data={PriceApartmentsData} />
+      <h3 className='price__title'>{t('price').roomsTitle}</h3>
+      <AppTable columns={t('priceRoomsColumns')} data={t('priceRoomsData')} />
+      <h3 className='price__title'>{t('price').apartmentsTitle}</h3>
+      <AppTable
+        columns={t('priceApartmentsColumns')}
+        data={t('priceApartmentsData')}
+      />
     </section>
   )
 }

@@ -1,0 +1,9 @@
+[
+  {"href": "experience", "name": "Experience"},
+  {"href": "our-rooms", "name": "Our Rooms"},
+  {"href": "our-apartments", "name": "Our Apartments"},
+  {"href": "our-sauna", "name": "Our Sauna"},
+  {"href": "price", "name": "Price"},
+  {"href": "extras", "name": "Extras"},
+  {"href": "location", "name": "Location"}
+]

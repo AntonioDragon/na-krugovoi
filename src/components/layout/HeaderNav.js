@@ -2,9 +2,10 @@ import classNames from 'classnames'
 import Logo from '../Logo'
 import ExternalLink from '../ui/link/ExternalLink'
 import AppButton from '../ui/button/AppButton'
-import headerContent from '../../content/header/header.json'
+import {useTranslation} from 'react-i18next'
 
 const HeaderNav = ({isBurger, onSetIsBurger}) => {
+  const {t} = useTranslation()
   return (
     <nav className={classNames('header-nav', {'is-active': isBurger})}>
       <div className='header-nav__wrapper'>
@@ -12,10 +13,10 @@ const HeaderNav = ({isBurger, onSetIsBurger}) => {
       </div>
       <div className='header-nav__links'>
         <div className='header-nav__link-section'>
-          <p className='header-nav__link-title'>Phone:</p>
+          <p className='header-nav__link-title'>{t('header').phoneText}:</p>
           <ExternalLink
             className='header-nav__link'
-            href={headerContent.phoneLink}
+            href={t('header').phoneLink}
           >
             <svg
               className='header-nav__link-icon'
@@ -28,14 +29,14 @@ const HeaderNav = ({isBurger, onSetIsBurger}) => {
                 fill='#514F4F'
               />
             </svg>
-            <span>{headerContent.phone}</span>
+            <span>{t('header').phone}</span>
           </ExternalLink>
         </div>
         <div className='header-nav__link-section'>
-          <p className='header-nav__link-title'>Email:</p>
+          <p className='header-nav__link-title'>{t('header').emailText}:</p>
           <ExternalLink
             className='header-nav__link'
-            href={headerContent.emailLink}
+            href={t('header').emailLink}
           >
             <svg
               className='header-nav__link-icon'
@@ -48,7 +49,7 @@ const HeaderNav = ({isBurger, onSetIsBurger}) => {
                 fill='#514F4F'
               />
             </svg>
-            <span>{headerContent.email}</span>
+            <span>{t('header').email}</span>
           </ExternalLink>
         </div>
       </div>

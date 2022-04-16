@@ -1,7 +1,12 @@
 .our-sauna {
+  position: relative;
+  margin-top: 110px;
   &__slider {
     box-sizing: border-box;
     padding-left: 88px;
     margin-top: 20px;
+  }
+  &__slider-dots{
+    bottom: -30px;
   }
 }

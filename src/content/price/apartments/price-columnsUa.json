@@ -1,0 +1,23 @@
+[
+    {
+      "Header": "",
+      "accessor": "col1"
+    },
+    {
+      "Header": "Кімнати",
+      "accessor": "col2"
+    },
+    {
+      "Header": "Місця",
+      "accessor": "col3"
+    },
+    {
+      "Header": "Ціна",
+      "accessor": "col4"
+    },
+    {
+      "Header": "Iнформація",
+      "accessor": "col5"
+    }
+  ]
+  

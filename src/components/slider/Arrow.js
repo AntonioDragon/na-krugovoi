@@ -1,12 +1,19 @@
 import classNames from 'classnames'
 
-const Arrow = ({isLeft = false, onClick, isPrehover = false, isAlternativeArrow}) => {
+const Arrow = ({
+  isLeft = false,
+  onClick,
+  isModalSlider = false,
+  isPrehover = false,
+  isAlternativeArrow
+}) => {
   return (
     <div
       className={classNames('slider-arrow', {
         'is-left': isLeft,
         'is-prehover': isPrehover,
-        'is-alternative': isAlternativeArrow
+        'is-alternative': isAlternativeArrow,
+        'is-modal': isModalSlider
       })}
       onClick={onClick}
     >

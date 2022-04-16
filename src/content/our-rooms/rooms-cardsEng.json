@@ -2,7 +2,7 @@
   {
     "id": 0,
     "image": "/images/rooms/0/0.jpg",
-    "allImages": [
+    "images": [
       "/images/rooms/0/0.jpg",
       "/images/rooms/0/1.jpg",
       "/images/rooms/0/2.jpg",
@@ -13,7 +13,7 @@
   {
     "id": 1,
     "image": "/images/rooms/1/1.jpg",
-    "allImages": [
+    "images": [
       "/images/rooms/1/0.jpg",
       "/images/rooms/1/1.jpg",
       "/images/rooms/1/2.jpg",
@@ -24,7 +24,7 @@
   {
     "id": 2,
     "image": "/images/rooms/2/0.jpg",
-    "allImages": [
+    "images": [
       "/images/rooms/2/0.jpg",
       "/images/rooms/2/1.jpg",
       "/images/rooms/2/2.jpg",
@@ -36,7 +36,7 @@
   {
     "id": 3,
     "image": "/images/rooms/3/0.jpg",
-    "allImages": [
+    "images": [
       "/images/rooms/3/0.jpg",
       "/images/rooms/3/1.jpg",
       "/images/rooms/3/2.jpg",
@@ -47,7 +47,7 @@
   {
     "id": 4,
     "image": "/images/rooms/4/0.jpg",
-    "allImages": [
+    "images": [
       "/images/rooms/4/0.jpg",
       "/images/rooms/4/1.jpg",
       "/images/rooms/4/2.jpg",
@@ -59,7 +59,7 @@
   {
     "id": 5,
     "image": "/images/rooms/5/0.jpg",
-    "allImages": [
+    "images": [
       "/images/rooms/5/0.jpg",
       "/images/rooms/5/1.jpg",
       "/images/rooms/5/2.jpg",
@@ -71,7 +71,7 @@
   {
     "id": 6,
     "image": "/images/rooms/6/0.jpg",
-    "allImages": [
+    "images": [
       "/images/rooms/6/0.jpg",
       "/images/rooms/6/1.jpg",
       "/images/rooms/6/2.jpg",
@@ -82,7 +82,7 @@
   {
     "id": 7,
     "image": "/images/rooms/7/0.jpg",
-    "allImages": [
+    "images": [
       "/images/rooms/7/0.jpg",
       "/images/rooms/7/1.jpg",
       "/images/rooms/7/2.jpg",
@@ -94,7 +94,7 @@
   {
     "id": 8,
     "image": "/images/rooms/8/0.jpg",
-    "allImages": [
+    "images": [
       "/images/rooms/8/0.jpg",
       "/images/rooms/8/1.jpg",
       "/images/rooms/8/2.jpg",
@@ -106,7 +106,7 @@
   {
     "id": 9,
     "image": "/images/rooms/9/0.jpg",
-    "allImages": [
+    "images": [
       "/images/rooms/9/0.jpg",
       "/images/rooms/9/1.jpg",
       "/images/rooms/9/2.jpg",

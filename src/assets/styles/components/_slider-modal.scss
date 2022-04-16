@@ -1,0 +1,59 @@
+.slider-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: none;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba($black, 0.9);
+  &__container {
+    height: 100%;
+  }
+  &__button-close {
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    background-color: transparent;
+    border: none;
+    &:hover {
+      & svg * {
+        fill: $gray-black;
+      }
+    }
+  }
+  &__button-icon {
+    width: 30px;
+    height: 30px;
+    & * {
+      fill: $white;
+    }
+  }
+  &__wrapper {
+    position: fixed;
+    width: 90%;
+    height: 600px;
+    background-color: rgba($gray-black, 0.6);
+    z-index: 2;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -20%);
+  }
+  &__slider-track {
+    height: 100%;
+  }
+  &__slider {
+    height: 100%;
+  }
+  &__slider-wrapper {
+    position: relative;
+    height: 100%;
+  }
+  &__slider-dots {
+    bottom: 20px;
+  }
+  &.is-active {
+    display: block;
+  }
+}

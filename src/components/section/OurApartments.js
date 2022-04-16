@@ -2,8 +2,7 @@ import dynamic from 'next/dynamic'
 import SectionHead from '../SectionHead'
 import OurApartmentsCard from '../ui/card/OurApartmentsCard'
 import WarningTypography from '../ui/typography/WarningTypography'
-import apartmentsContent from '../../content/our-apartments/apartments.json'
-import apartmentsCards from '../../content/our-apartments/apartments-cards.json'
+import {useTranslation} from 'react-i18next'
 
 const SliderWrapper = dynamic(async () => import('../slider/SliderWrapper'), {
   ssr: false
@@ -24,27 +23,34 @@ const options = {
   responsive,
   swipeable: true,
   showDots: true,
-  arrows: false,
+  arrows: true,
+  infinite: true,
+  showDots: true,
   containerClass: 'our-apartments__slider',
   dotListClass: 'our-apartments__slider-dots'
 }
 
-const OurApartments = () => {
+const OurApartments = ({onSetActiveSlider}) => {
+  const {t} = useTranslation()
   return (
-    <section className='our-apartments'>
+    <section className='our-apartments' id='our-apartments'>
       <SectionHead
-        title={apartmentsContent.title}
-        subTitle={apartmentsContent.subTitle}
-        subText={apartmentsContent.subText}
+        title={t('ourApartments').title}
+        subTitle={t('ourApartments').subTitle}
+        subText={t('ourApartments').subText}
       />
-      <WarningTypography typography={apartmentsContent.typography} />
+      <WarningTypography typography={t('ourApartments').typography} />
       <SliderWrapper
         wrapperClass={'our-rooms__wrapper'}
         sliderOptions={options}
         widthChanged={992}
       >
-        {apartmentsCards.map((room) => (
-          <OurApartmentsCard key={room.id} {...room} />
+        {t('ourApartmentsCards').map((room) => (
+          <OurApartmentsCard
+            onSetActiveSlider={onSetActiveSlider}
+            key={room.id}
+            {...room}
+          />
         ))}
       </SliderWrapper>
     </section>

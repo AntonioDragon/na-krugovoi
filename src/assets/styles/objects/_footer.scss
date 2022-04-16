@@ -1,6 +1,52 @@
 .footer {
+  margin-top: 60px;
+
+  padding: 20px 80px;
+  box-sizing: border-box;
   width: 100%;
+  &__typography {
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: $gray;
+  }
   &__authorship {
     text-align: center;
+  }
+  &__contacts-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  &__contacts-link {
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__contacts-icon {
+    margin-right: 10px;
+    & * {
+      fill: $gray;
+    }
+  }
+  &__contacts-text {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: $gray;
+  }
+  &__authorship {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: rgba($gray, 0.8);
   }
 }

@@ -11,7 +11,7 @@ const Layout = ({children}) => {
   return (
     <>
       <Head>
-        <title>На Круговой</title>
+        <title>На Круговій</title>
       </Head>
       <header className='header'>
         <HeaderNav isBurger={isBurger} onSetIsBurger={setIsBurger} />

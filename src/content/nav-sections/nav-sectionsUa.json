@@ -1,0 +1,9 @@
+[
+  {"href": "experience", "name": "Досвід"},
+  {"href": "our-rooms", "name": "Наші Номера"},
+  {"href": "our-apartments", "name": "Наші Квартири"},
+  {"href": "our-sauna", "name": "Наша Сауна"},
+  {"href": "price", "name": "Ціна"},
+  {"href": "extras", "name": "Додатково"},
+  {"href": "location", "name": "Розташування"}
+]

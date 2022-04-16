@@ -10,6 +10,7 @@ const Slider = ({
   children,
   showDots,
   infinite,
+  isModalSlider,
   isAlternativeArrow,
   removeArrowOnDeviceType,
   dotListClass,
@@ -45,6 +46,7 @@ const Slider = ({
       customLeftArrow={
         <Arrow
           isLeft={true}
+          isModalSlider={true}
           onClick={onClickNextSlide}
           isPrehover={isArrowsPreHover}
           isAlternativeArrow={isAlternativeArrow}

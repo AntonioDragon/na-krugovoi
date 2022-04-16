@@ -1,9 +1,8 @@
 import Slider from '../slider/Slider'
 import SectionHead from '../SectionHead'
-import saunaContent from '../../content/our-sauna/sauna.json'
-import saunaCads from '../../content/our-sauna/sauna-cards.json'
 import OurSaunaCard from '../ui/card/OurSaunaCard'
 import WarningTypography from '../ui/typography/WarningTypography'
+import {useTranslation} from 'react-i18next'
 
 const responsive = {
   superLargeDesktop: {
@@ -12,7 +11,7 @@ const responsive = {
   },
   desktop: {
     breakpoint: {max: 3000, min: 1024},
-    items: 3
+    items: 3.5
   },
   tablet: {
     breakpoint: {max: 1024, min: 464},
@@ -24,15 +23,26 @@ const responsive = {
   }
 }
 const OurSauna = () => {
+  const {t} = useTranslation()
   return (
-    <section className='our-sauna'>
+    <section className='our-sauna' id='our-sauna'>
       <SectionHead
-        title={saunaContent.title}
-        subTitle={saunaContent.subTitle}
+        title={t('ourSauna').title}
+        subTitle={t('ourSauna').subTitle}
       />
-      <WarningTypography typography={saunaContent.typography} />
-      <Slider ssr={true} responsive={responsive} containerClass={'our-sauna__slider'}>
-        {saunaCads.map((saunaCard) => (
+      <WarningTypography typography={t('ourSauna').typography} />
+      <Slider
+        arrows={true}
+        ssr={true}
+        infinite={true}
+        responsive={responsive}
+        sliderClass={'our-sauna__slider-track'}
+        containerClass={'our-sauna__slider'}
+        dotListClass={'our-sauna__slider-dots'}
+        showDots={true}
+        renderDotsOutside={true}
+      >
+        {t('ourSaunaCards').map((saunaCard) => (
           <OurSaunaCard key={saunaCard.id} {...saunaCard} />
         ))}
       </Slider>
