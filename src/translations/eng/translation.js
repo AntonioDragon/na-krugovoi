@@ -35,5 +35,6 @@ export const TRANSLATIONS_ENG = {
   priceApartmentsData,
   priceRoomsColumns,
   priceRoomsData,
-  navSections
+  navSections,
+  sections: "Sections"
 }

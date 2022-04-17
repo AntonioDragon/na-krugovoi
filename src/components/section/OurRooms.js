@@ -10,11 +10,11 @@ const SliderWrapper = dynamic(async () => import('../slider/SliderWrapper'), {
 
 const responsive = {
   tablet: {
-    breakpoint: {max: 992, min: 464},
+    breakpoint: {max: 992, min: 690},
     items: 2
   },
   mobile: {
-    breakpoint: {max: 464, min: 0},
+    breakpoint: {max: 690, min: 0},
     items: 1
   }
 }
@@ -24,6 +24,7 @@ const options = {
   swipeable: true,
   showDots: true,
   arrows: false,
+  itemClass: 'our-rooms__slider-item',
   containerClass: 'our-rooms__slider',
   dotListClass: 'our-rooms__slider-dots'
 }

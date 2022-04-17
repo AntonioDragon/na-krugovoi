@@ -46,7 +46,7 @@ const Slider = ({
       customLeftArrow={
         <Arrow
           isLeft={true}
-          isModalSlider={true}
+          isModalSlider={isModalSlider}
           onClick={onClickNextSlide}
           isPrehover={isArrowsPreHover}
           isAlternativeArrow={isAlternativeArrow}

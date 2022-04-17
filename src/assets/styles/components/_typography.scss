@@ -7,10 +7,16 @@
   justify-content: center;
   max-width: 800px;
   border-radius: 5px;
+  @media (max-width: 500px) {
+    margin-top: 20px;
+  }
   &__icon {
     margin-right: 10px;
     & * {
       fill: $black;
+    }
+    @media (max-width: 992px) {
+      display: none;
     }
   }
   &__text {

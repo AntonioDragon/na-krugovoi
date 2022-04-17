@@ -33,12 +33,15 @@
   &__wrapper {
     position: fixed;
     width: 90%;
-    height: 600px;
+    height: 500px;
     background-color: rgba($gray-black, 0.6);
     z-index: 2;
-    top: 200px;
+    top: 160px;
     left: 50%;
     transform: translate(-50%, -20%);
+    @media (max-width: 992px) {
+      width: 100%;
+    }
   }
   &__slider-track {
     height: 100%;

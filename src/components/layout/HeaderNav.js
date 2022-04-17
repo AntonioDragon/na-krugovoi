@@ -3,6 +3,8 @@ import Logo from '../Logo'
 import ExternalLink from '../ui/link/ExternalLink'
 import AppButton from '../ui/button/AppButton'
 import {useTranslation} from 'react-i18next'
+import NavigateLinks from '../NavigateLinks'
+import LanguageButtons from '../LanguageButtons'
 
 const HeaderNav = ({isBurger, onSetIsBurger}) => {
   const {t} = useTranslation()
@@ -51,6 +53,9 @@ const HeaderNav = ({isBurger, onSetIsBurger}) => {
             </svg>
             <span>{t('header').email}</span>
           </ExternalLink>
+        </div>
+        <div className='header-nav__nav-section'>
+          <LanguageButtons />
         </div>
       </div>
       <AppButton

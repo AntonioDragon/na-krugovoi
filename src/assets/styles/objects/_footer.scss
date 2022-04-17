@@ -1,9 +1,11 @@
 .footer {
   margin-top: 60px;
-
   padding: 20px 80px;
   box-sizing: border-box;
   width: 100%;
+  @media (max-width: 992px) {
+    padding: 0 60px;
+  }
   &__typography {
     margin: 0 auto;
     max-width: 300px;
@@ -21,6 +23,7 @@
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
   &__contacts-link {
     margin-left: 10px;

@@ -1,0 +1,36 @@
+.nav-links {
+  &__title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 100%;
+    color: $dark-light;
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    @media (max-width: 992px) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+  &__list-element {
+    margin-top: 10px;
+    color: $text-gray-light;
+    @media (max-width: 992px) {
+      list-style-type: none;
+    }
+  }
+  &__link {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: $text-gray-light;
+    &:hover {
+      color: $text-gray;
+    }
+  }
+}

@@ -35,5 +35,6 @@ export const TRANSLATIONS_UA = {
   priceApartmentsData: priceApartmentsData,
   priceRoomsColumns: priceRoomsColumns,
   priceRoomsData: priceRoomsData,
-  navSections: navSections
+  navSections: navSections,
+  sections: "Розділи"
 }

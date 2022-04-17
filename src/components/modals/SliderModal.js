@@ -4,10 +4,14 @@ import AppButton from '../ui/button/AppButton'
 import ModalCard from '../ui/card/ModalCard'
 
 const responsive = {
-  all: {
-    breakpoint: {max: 5000, min: 0},
+  desktop: {
+    breakpoint: {max: 5000, min: 992},
     items: 1
-  }
+  },
+  tablet: {
+    breakpoint: {max: 992, min: 0},
+    items: 1
+  },
 }
 
 const SliderModal = ({isActive, slides, onClose}) => {
@@ -39,6 +43,7 @@ const SliderModal = ({isActive, slides, onClose}) => {
                 containerClass={'slider-modal__slider'}
                 dotListClass={'slider-modal__slider-dots'}
                 renderDotsOutside={true}
+                removeArrowOnDeviceType={'tablet'}
               >
                 {slides.map((slide, index) => (
                   <ModalCard key={index} image={slide} />

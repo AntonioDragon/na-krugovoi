@@ -14,11 +14,11 @@ const responsive = {
     items: 3.5
   },
   tablet: {
-    breakpoint: {max: 1024, min: 464},
+    breakpoint: {max: 1024, min: 800},
     items: 2
   },
   mobile: {
-    breakpoint: {max: 464, min: 0},
+    breakpoint: {max: 800, min: 0},
     items: 1
   }
 }
@@ -41,6 +41,8 @@ const OurSauna = () => {
         dotListClass={'our-sauna__slider-dots'}
         showDots={true}
         renderDotsOutside={true}
+        itemClass={'our-sauna__slider-item'}
+        removeArrowOnDeviceType={['tablet', 'mobile']}
       >
         {t('ourSaunaCards').map((saunaCard) => (
           <OurSaunaCard key={saunaCard.id} {...saunaCard} />
