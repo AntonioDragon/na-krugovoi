@@ -24,7 +24,6 @@ const LanguageButtons = () => {
     )
     if (configId !== -1) {
       languageState[configId].isActive = true
-      i18next.changeLanguage(languageState[configId].language)
       setLanguageConfig(languageState)
     }
   }, [])

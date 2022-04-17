@@ -14,6 +14,9 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
+    &.is-active {
+      color: $text-gray;
+    }
   }
   &.is-active {
     color: $black;
