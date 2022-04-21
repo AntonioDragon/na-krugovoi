@@ -1,8 +1,10 @@
 {
-    "phone": "+380971775577",
-    "phoneLink": "tel:380971775577",
-    "email": "ovkzp1977@gmail.com",
-    "emailLink": "mail:ovkzp1977@gmail.com",
-    "phoneText": "Телефон",
-    "emailText": "Пошта"
-  }
+  "phone": "+380677650244",
+  "phoneLink": "tel:+380677650244",
+  "dopPhone": "+380971775577",
+  "dopPhoneLink": "tel:380971775577",
+  "email": "ovkzp1977@gmail.com",
+  "emailLink": "mail:ovkzp1977@gmail.com",
+  "phoneText": "Телефон",
+  "emailText": "Пошта"
+}

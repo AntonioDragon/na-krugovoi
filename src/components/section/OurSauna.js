@@ -10,12 +10,20 @@ const responsive = {
     items: 5
   },
   desktop: {
-    breakpoint: {max: 3000, min: 1024},
+    breakpoint: {max: 3000, min: 1440},
     items: 3.5
   },
   tablet: {
-    breakpoint: {max: 1024, min: 800},
-    items: 2
+    breakpoint: {max: 1440, min: 1225},
+    items: 3
+  },
+  tablet_middle: {
+    breakpoint: {max: 1225, min: 1014},
+    items: 2.5
+  },
+  tablet_small: {
+    breakpoint: {max: 1014, min: 900},
+    items: 2.2
   },
   mobile: {
     breakpoint: {max: 800, min: 0},
@@ -30,7 +38,9 @@ const OurSauna = () => {
         title={t('ourSauna').title}
         subTitle={t('ourSauna').subTitle}
       />
-      <WarningTypography typography={t('ourSauna').typography} />
+      <div className='our-sauna__typography-wrapper'>
+        <WarningTypography typography={t('ourSauna').typography} />
+      </div>
       <Slider
         arrows={true}
         ssr={true}

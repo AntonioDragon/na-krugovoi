@@ -12,7 +12,7 @@
       "accessor": "col3"
     },
     {
-      "Header": "Ціна",
+      "Header": "Ціна за добу",
       "accessor": "col4"
     },
     {

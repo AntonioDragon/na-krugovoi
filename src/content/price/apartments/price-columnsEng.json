@@ -12,7 +12,7 @@
     "accessor": "col3"
   },
   {
-    "Header": "Price",
+    "Header": "Price per day",
     "accessor": "col4"
   },
   {

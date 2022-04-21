@@ -1,5 +1,9 @@
 {
   "title": "Look at our Sauna:",
   "subTitle": "Sauna",
-  "typography": "Min 2 hours. 4 people 250 uah - 1 hour. For each additional person +50 uah"
+  "typography": [
+    "Min 2 hours.",
+    "4 people 300 uah - 1 hour.",
+    "For each additional person +60 uah."
+  ]
 }

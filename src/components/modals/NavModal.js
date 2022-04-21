@@ -13,7 +13,7 @@ const NavModal = ({isActive, onSetIsNavModalActive}) => {
         <span className='burger-nav__icon' />
       </AppButton>
       <article className={classNames('nav-modal', {'is-active': isActive})}>
-        <NavigateLinks />
+        <NavigateLinks onSetIsNavModalActive={onSetIsNavModalActive}/>
         <LanguageButtons />
       </article>
     </>

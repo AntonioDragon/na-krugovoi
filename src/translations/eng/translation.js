@@ -16,6 +16,7 @@ import priceApartmentsData from '../../content/price/apartments/price-dataEng.js
 import priceRoomsColumns from '../../content/price/rooms/price-columnsEng.json'
 import priceRoomsData from '../../content/price/rooms/price-dataEng.json'
 import navSections from '../../content/nav-sections/nav-sectionsEng.json'
+import cafe from '../../content/cafe/cafeEng.json'
 
 export const TRANSLATIONS_ENG = {
   experience,
@@ -36,5 +37,9 @@ export const TRANSLATIONS_ENG = {
   priceRoomsColumns,
   priceRoomsData,
   navSections,
-  sections: "Sections"
+  cafe,
+  sections: 'Sections',
+  rooms: 'Rooms',
+  price: 'Price',
+  places: 'Places'
 }

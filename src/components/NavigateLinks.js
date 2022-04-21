@@ -1,7 +1,7 @@
 import {useTranslation} from 'react-i18next'
 import {Link, animateScroll as scroll} from 'react-scroll'
 
-const NavigateLinks = () => {
+const NavigateLinks = ({onSetIsNavModalActive}) => {
   const {t} = useTranslation()
   return (
     <div className='nav-links'>

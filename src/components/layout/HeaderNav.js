@@ -16,10 +16,7 @@ const HeaderNav = ({isBurger, onSetIsBurger}) => {
       <div className='header-nav__links'>
         <div className='header-nav__link-section'>
           <p className='header-nav__link-title'>{t('header').phoneText}:</p>
-          <ExternalLink
-            className='header-nav__link'
-            href={t('header').phoneLink}
-          >
+          <div className='header-nav__phone-links'>
             <svg
               className='header-nav__link-icon'
               width='16'
@@ -31,8 +28,19 @@ const HeaderNav = ({isBurger, onSetIsBurger}) => {
                 fill='#514F4F'
               />
             </svg>
-            <span>{t('header').phone}</span>
-          </ExternalLink>
+            <ExternalLink
+              className='header-nav__link'
+              href={t('header').phoneLink}
+            >
+              <span>{t('header').phone}</span>
+            </ExternalLink>
+            <ExternalLink
+              className='header-nav__link'
+              href={t('header').dopPhoneLink}
+            >
+              <span>{t('header').dopPhone}</span>
+            </ExternalLink>
+          </div>
         </div>
         <div className='header-nav__link-section'>
           <p className='header-nav__link-title'>{t('header').emailText}:</p>

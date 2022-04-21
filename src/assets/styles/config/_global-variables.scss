@@ -21,3 +21,11 @@ $primary-light: #ffc000;
 $warning: #fff3cd;
 $text-warning: #856404;
 $border-warning: #ffeeba;
+
+$gradient-primary: #ff8a00;
+$gradient-primary-light: #ffc000;
+$gradient: linear-gradient(
+  253.58deg,
+  $gradient-primary-light 1.55%,
+  $gradient-primary 95.8%
+);

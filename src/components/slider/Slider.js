@@ -1,4 +1,4 @@
-import {useCallback, useRef} from 'react'
+import {useCallback, useEffect, useRef} from 'react'
 import Carousel from 'react-multi-carousel'
 import Arrow from './Arrow'
 import CustomDot from './CustomDot'
@@ -34,6 +34,10 @@ const Slider = ({
     () => carouselRef.current.next(),
     [carouselRef]
   )
+
+  useEffect(() => {
+    carouselRef.current.goToSlide(0)
+  }, [])
 
   return (
     <Carousel

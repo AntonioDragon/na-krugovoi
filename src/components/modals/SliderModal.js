@@ -1,4 +1,6 @@
 import classNames from 'classnames'
+import {useRef} from 'react'
+import {useTranslation} from 'react-i18next'
 import Slider from '../slider/Slider'
 import AppButton from '../ui/button/AppButton'
 import ModalCard from '../ui/card/ModalCard'
@@ -11,14 +13,16 @@ const responsive = {
   tablet: {
     breakpoint: {max: 992, min: 0},
     items: 1
-  },
+  }
 }
 
-const SliderModal = ({isActive, slides, onClose}) => {
+const SliderModal = ({roomSlides, onClose}) => {
+  const {t} = useTranslation()
+
   return (
-    <article className={classNames('slider-modal', {'is-active': isActive})}>
+    <article className={classNames('slider-modal', {'is-active': true})}>
       <AppButton
-        onClick={() => onClose(false)}
+        onClick={()=>onClose(false)}
         className='slider-modal__button-close'
       >
         <svg
@@ -30,9 +34,38 @@ const SliderModal = ({isActive, slides, onClose}) => {
         </svg>
       </AppButton>
       <div className='slider-modal__wrapper'>
+        {roomSlides && (
+          <div className='slider-modal__info'>
+            <div className='slider-modal__typography'>
+              <p className='slider-modal__text slider-modal__text--name'>
+                №{roomSlides.id + 1}
+              </p>
+            </div>
+            <div className='slider-modal__typography'>
+              <p className='slider-modal__text slider-modal__text--name'>
+                {t('price')}:
+              </p>
+              <p className='slider-modal__text'>{roomSlides.price}</p>
+            </div>
+            <div className='slider-modal__typography'>
+              <p className='slider-modal__text slider-modal__text--name'>
+                {t('places')}:
+              </p>
+              <p className='slider-modal__text'>{roomSlides.places}</p>
+            </div>
+            {roomSlides.rooms && (
+              <div className='slider-modal__typography'>
+                <p className='slider-modal__text slider-modal__text--name'>
+                  {t('rooms')}:
+                </p>
+                <p className='slider-modal__text'>{roomSlides.rooms}</p>
+              </div>
+            )}
+          </div>
+        )}
         <div className='slider-modal__container'>
           <div className='slider-modal__slider-wrapper'>
-            {slides && (
+            {roomSlides?.images && (
               <Slider
                 responsive={responsive}
                 infinite={true}
@@ -45,7 +78,7 @@ const SliderModal = ({isActive, slides, onClose}) => {
                 renderDotsOutside={true}
                 removeArrowOnDeviceType={'tablet'}
               >
-                {slides.map((slide, index) => (
+                {roomSlides.images.map((slide, index) => (
                   <ModalCard key={index} image={slide} />
                 ))}
               </Slider>

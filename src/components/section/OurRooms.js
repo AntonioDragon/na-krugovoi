@@ -38,7 +38,9 @@ const OurRooms = ({onSetActiveSlider}) => {
         subTitle={t('ourRooms').subTitle}
         subText={t('ourRooms').subText}
       />
-      <WarningTypography typography={t('ourRooms').typography} />
+      <div className='our-rooms__typography-wrapper'>
+        <WarningTypography typography={t('ourRooms').typography} />
+      </div>
       <SliderWrapper
         wrapperClass={'our-rooms__wrapper'}
         sliderOptions={options}
@@ -48,7 +50,7 @@ const OurRooms = ({onSetActiveSlider}) => {
           <OurRoom
             onSetActiveSlider={onSetActiveSlider}
             key={room.id}
-            {...room}
+            room={room}
           />
         ))}
       </SliderWrapper>

@@ -11,26 +11,26 @@ import Portal from '../components/ui/portal/Portal'
 import SliderModal from '../components/modals/SliderModal'
 import NavModal from '../components/modals/NavModal'
 import i18next from 'i18next'
+import Cafe from '../components/section/Cafe'
 
 export default function Home() {
-  const [slides, setSlides] = useState(null)
+  const [roomSlides, setRoomSlides] = useState(null)
   const [isNavModalActive, setIsNavModalActive] = useState(false)
   const [isModalActive, setIsModalActive] = useState(false)
 
   useEffect(() => {
     if (localStorage.getItem('i18nextLng')) {
       i18next.changeLanguage(localStorage.getItem('i18nextLng'))
-    } else{
+    } else {
       i18next.changeLanguage('eng')
       localStorage.setItem('i18nextLng', 'eng')
     }
   }, [])
 
-
-  const onSetActiveSlider = useCallback((state, slides) => {
+  const onSetActiveSlider = useCallback((state, room) => {
     setIsModalActive(state)
-    if (slides) {
-      setSlides(slides)
+    if (room) {
+      setRoomSlides(room)
     }
   }, [])
 
@@ -42,11 +42,9 @@ export default function Home() {
   return (
     <>
       <Portal>
-        <SliderModal
-          isActive={isModalActive}
-          slides={slides}
-          onClose={onSetActiveSlider}
-        />
+        {isModalActive && (
+          <SliderModal roomSlides={roomSlides} onClose={onSetActiveSlider} />
+        )}
         <NavModal
           isActive={isNavModalActive}
           onSetIsNavModalActive={onSetIsNavModalActive}
@@ -60,6 +58,7 @@ export default function Home() {
         <Price />
         <Extras />
         <OurLocation />
+        <Cafe />
       </Layout>
     </>
   )

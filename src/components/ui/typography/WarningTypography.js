@@ -1,4 +1,5 @@
 const WarningTypography = ({typography}) => {
+  console.log(typography)
   return (
     <div className='typography typography--warning'>
       <svg
@@ -10,7 +11,13 @@ const WarningTypography = ({typography}) => {
       >
         <path d='M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z' />
       </svg>
-      <p className='typography__text'>{typography}</p>
+      <div>
+        {typography.map((text, index) => (
+          <p key={index} className='typography__text'>
+            {text}
+          </p>
+        ))}
+      </div>
     </div>
   )
 }

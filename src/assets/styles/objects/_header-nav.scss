@@ -1,7 +1,7 @@
 .header-nav {
   position: fixed;
   z-index: 5;
-  background-color: $white;
+  background: $gradient;
   box-sizing: border-box;
   padding: 24px 20px;
   max-width: 80px;
@@ -24,11 +24,12 @@
       position: absolute;
       left: 0;
       width: 100%;
-      padding: 20px 12px;
-      background-color: $white;
+      padding: 30px 12px;
+      background: $gradient;
       z-index: 3;
     }
   }
+
   &__links {
     margin-top: 45px;
     @media (max-width: 992px) {
@@ -61,7 +62,15 @@
       margin-bottom: 25px;
     }
   }
+  &__phone-links {
+    display: flex;
+    margin-left: -10px;
+    @media (max-width: 992px) {
+      margin-left: 10px;
+    }
+  }
   &__link {
+    margin-left: 10px;
     cursor: pointer;
     writing-mode: vertical-rl;
     transform: rotate(180deg);

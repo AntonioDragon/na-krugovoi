@@ -16,6 +16,7 @@ import priceApartmentsData from '../../content/price/apartments/price-dataUa.jso
 import priceRoomsColumns from '../../content/price/rooms/price-columnsUa.json'
 import priceRoomsData from '../../content/price/rooms/price-dataUa.json'
 import navSections from '../../content/nav-sections/nav-sectionsUa.json'
+import cafe from '../../content/cafe/cafeUa.json'
 
 export const TRANSLATIONS_UA = {
   experience: experience,
@@ -26,7 +27,7 @@ export const TRANSLATIONS_UA = {
   location: location,
   ourApartments: ourApartments,
   ourApartmentsCards: ourApartmentsCards,
-  ouRooms: ouRooms,
+  ourRooms: ouRooms,
   ouRoomsCards: ouRoomsCards,
   ourSaunaCards: ourSaunaCards,
   ourSauna: ourSauna,
@@ -36,5 +37,9 @@ export const TRANSLATIONS_UA = {
   priceRoomsColumns: priceRoomsColumns,
   priceRoomsData: priceRoomsData,
   navSections: navSections,
-  sections: "Розділи"
+  cafe: cafe,
+  sections: 'Розділи',
+  rooms: 'Кімнати',
+  price: 'Ціна',
+  places: 'Місця'
 }

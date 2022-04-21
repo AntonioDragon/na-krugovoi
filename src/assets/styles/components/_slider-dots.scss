@@ -11,11 +11,11 @@
     width: 8px;
     height: 8px;
     border: none;
-    background-color: $gray-light;
+    background: $gradient;
     border-radius: 50%;
     transition: all 0.4s ease-out;
     &.is-active {
-      background-color: $gray;
+      background: $gradient;
       width: 24px;
       border-radius: 100px;
     }

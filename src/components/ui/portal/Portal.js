@@ -10,7 +10,7 @@ const Portal = ({children}) => {
   }, [])
 
   return mounted
-    ? createPortal(children, document.getElementById('portals'))
+    ? createPortal(children, document.querySelector('.portals'))
     : null
 }
 
