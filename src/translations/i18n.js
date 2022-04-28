@@ -5,7 +5,7 @@ import {TRANSLATIONS_UA} from './ua/translation'
 
 i18next.use(initReactI18next).init({
   returnObjects: true,
-  fallbackLng: 'eng',
+  fallbackLng: 'ua',
   resources: {
     eng: {
       translation: TRANSLATIONS_ENG

@@ -1,5 +1,4 @@
 import classNames from 'classnames'
-import {useRef} from 'react'
 import {useTranslation} from 'react-i18next'
 import Slider from '../slider/Slider'
 import AppButton from '../ui/button/AppButton'
@@ -43,7 +42,7 @@ const SliderModal = ({roomSlides, onClose}) => {
             </div>
             <div className='slider-modal__typography'>
               <p className='slider-modal__text slider-modal__text--name'>
-                {t('price')}:
+                {t('priceText')}:
               </p>
               <p className='slider-modal__text'>{roomSlides.price}</p>
             </div>

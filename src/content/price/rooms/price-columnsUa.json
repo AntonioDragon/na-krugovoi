@@ -4,7 +4,7 @@
       "accessor": "col1"
     },
     {
-      "Header": "Спальні місця",
+      "Header": "Кількість спальних місць",
       "accessor": "col2"
     },
     {

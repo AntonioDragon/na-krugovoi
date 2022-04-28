@@ -4,7 +4,7 @@
   background: $gradient;
   box-sizing: border-box;
   padding: 24px 20px;
-  max-width: 80px;
+  max-width: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,6 +45,9 @@
       transition: 0.5s bottom ease-out;
       background-color: $white;
     }
+    @media (max-width: 500px) {
+      padding: 0 15px;
+    }
   }
   &__link-section {
     margin-top: 30px;
@@ -64,12 +67,16 @@
   }
   &__phone-links {
     display: flex;
-    margin-left: -10px;
     @media (max-width: 992px) {
       margin-left: 10px;
     }
   }
+  &__phone-wrapper {
+    display: flex;
+    margin-left: -10px;
+  }
   &__link {
+    margin-top: 5px;
     margin-left: 10px;
     cursor: pointer;
     writing-mode: vertical-rl;
@@ -77,7 +84,7 @@
     font-weight: 600;
     line-height: 100%;
     color: $text-gray;
-    font-size: 12px;
+    font-size: 16px;
     transition: 0.3s opacity ease-out;
     &:hover {
       opacity: 0.6;
@@ -99,6 +106,9 @@
       display: block;
       margin-right: 29px;
     }
+    @media (max-width: 350px) {
+      margin-right: 10px;
+    }
   }
   &__button {
     display: none;
@@ -110,7 +120,7 @@
   &__nav-section {
     display: none;
     @media (max-width: 992px) {
-      margin-top: 30px;
+      margin-top: 20px;
       display: block;
     }
   }

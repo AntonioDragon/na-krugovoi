@@ -1,5 +1,4 @@
 const WarningTypography = ({typography}) => {
-  console.log(typography)
   return (
     <div className='typography typography--warning'>
       <svg

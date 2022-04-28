@@ -40,6 +40,8 @@ export const TRANSLATIONS_ENG = {
   cafe,
   sections: 'Sections',
   rooms: 'Rooms',
-  price: 'Price',
-  places: 'Places'
+  priceText: 'Price',
+  places: 'Places',
+  apartment: 'Apartment',
+  room: 'Room'
 }

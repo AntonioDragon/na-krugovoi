@@ -22,8 +22,8 @@ export default function Home() {
     if (localStorage.getItem('i18nextLng')) {
       i18next.changeLanguage(localStorage.getItem('i18nextLng'))
     } else {
-      i18next.changeLanguage('eng')
-      localStorage.setItem('i18nextLng', 'eng')
+      i18next.changeLanguage('ua')
+      localStorage.setItem('i18nextLng', 'ua')
     }
   }, [])
 

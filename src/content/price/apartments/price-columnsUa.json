@@ -4,11 +4,11 @@
       "accessor": "col1"
     },
     {
-      "Header": "Кімнати",
+      "Header": "Кількість кімнат",
       "accessor": "col2"
     },
     {
-      "Header": "Місця",
+      "Header": "Кількість спальних місць",
       "accessor": "col3"
     },
     {

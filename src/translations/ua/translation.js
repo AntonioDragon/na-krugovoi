@@ -6,8 +6,8 @@ import header from '../../content/header/headerUa.json'
 import location from '../../content/location/locationUa.json'
 import ourApartments from '../../content/our-apartments/apartmentsUa.json'
 import ourApartmentsCards from '../../content/our-apartments/apartments-cardsUa.json'
-import ouRooms from '../../content/our-rooms/roomsUa.json'
-import ouRoomsCards from '../../content/our-rooms/rooms-cardsUa.json'
+import ourRooms from '../../content/our-rooms/roomsUa.json'
+import ourRoomsCards from '../../content/our-rooms/rooms-cardsUa.json'
 import ourSauna from '../../content/our-sauna/saunaUa.json'
 import ourSaunaCards from '../../content/our-sauna/sauna-cardsUa.json'
 import price from '../../content/price/priceUa.json'
@@ -27,8 +27,8 @@ export const TRANSLATIONS_UA = {
   location: location,
   ourApartments: ourApartments,
   ourApartmentsCards: ourApartmentsCards,
-  ourRooms: ouRooms,
-  ouRoomsCards: ouRoomsCards,
+  ourRooms: ourRooms,
+  ourRoomsCards: ourRoomsCards,
   ourSaunaCards: ourSaunaCards,
   ourSauna: ourSauna,
   price: price,
@@ -39,7 +39,9 @@ export const TRANSLATIONS_UA = {
   navSections: navSections,
   cafe: cafe,
   sections: 'Розділи',
-  rooms: 'Кімнати',
-  price: 'Ціна',
-  places: 'Місця'
+  rooms: 'Номери',
+  priceText: 'Ціна',
+  places: 'Місця',
+  apartment: 'Квартира',
+  room: 'Номер'
 }

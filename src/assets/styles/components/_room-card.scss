@@ -30,12 +30,14 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba($black, 0.2);
-    transition: 0.3s all ease-out;
+    background-color: $black;
+    opacity: 0.2;
+    transition: 0.3s background-color ease-out;
   }
   &:hover {
     &::before {
-      background-color: rgba($primary-light, 0.7);
+      background-color: $primary-light;
+      opacity: 0.3;
     }
   }
 }

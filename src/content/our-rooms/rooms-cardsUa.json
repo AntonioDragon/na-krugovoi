@@ -8,8 +8,7 @@
       "/images/rooms/0/0.jpg",
       "/images/rooms/0/1.jpg",
       "/images/rooms/0/2.jpg",
-      "/images/rooms/0/3.jpg",
-      "/images/rooms/0/4.jpg"
+      "/images/rooms/0/3.jpg"
     ]
   },
   {
@@ -21,8 +20,7 @@
       "/images/rooms/1/0.jpg",
       "/images/rooms/1/1.jpg",
       "/images/rooms/1/2.jpg",
-      "/images/rooms/1/3.jpg",
-      "/images/rooms/1/4.jpg"
+      "/images/rooms/1/3.jpg"
     ]
   },
   {
@@ -34,9 +32,7 @@
       "/images/rooms/2/0.jpg",
       "/images/rooms/2/1.jpg",
       "/images/rooms/2/2.jpg",
-      "/images/rooms/2/3.jpg",
-      "/images/rooms/2/4.jpg",
-      "/images/rooms/2/5.jpg"
+      "/images/rooms/2/3.jpg"
     ]
   },
   {
@@ -48,8 +44,7 @@
       "/images/rooms/3/0.jpg",
       "/images/rooms/3/1.jpg",
       "/images/rooms/3/2.jpg",
-      "/images/rooms/3/3.jpg",
-      "/images/rooms/3/4.jpg"
+      "/images/rooms/3/3.jpg"
     ]
   },
   {
@@ -61,9 +56,7 @@
       "/images/rooms/4/0.jpg",
       "/images/rooms/4/1.jpg",
       "/images/rooms/4/2.jpg",
-      "/images/rooms/4/3.jpg",
-      "/images/rooms/4/4.jpg",
-      "/images/rooms/4/5.jpg"
+      "/images/rooms/4/3.jpg"
     ]
   },
   {
@@ -75,9 +68,7 @@
       "/images/rooms/5/0.jpg",
       "/images/rooms/5/1.jpg",
       "/images/rooms/5/2.jpg",
-      "/images/rooms/5/3.jpg",
-      "/images/rooms/5/4.jpg",
-      "/images/rooms/5/5.jpg"
+      "/images/rooms/5/3.jpg"
     ]
   },
   {
@@ -89,8 +80,7 @@
       "/images/rooms/6/0.jpg",
       "/images/rooms/6/1.jpg",
       "/images/rooms/6/2.jpg",
-      "/images/rooms/6/3.jpg",
-      "/images/rooms/6/4.jpg"
+      "/images/rooms/6/3.jpg"
     ]
   },
   {
@@ -98,14 +88,7 @@
     "image": "/images/rooms/7/0.jpg",
     "price": "800.00 грн",
     "places": "3",
-    "images": [
-      "/images/rooms/7/0.jpg",
-      "/images/rooms/7/1.jpg",
-      "/images/rooms/7/2.jpg",
-      "/images/rooms/7/3.jpg",
-      "/images/rooms/7/4.jpg",
-      "/images/rooms/7/5.jpg"
-    ]
+    "images": ["/images/rooms/7/0.jpg"]
   },
   {
     "id": 8,
@@ -116,9 +99,7 @@
       "/images/rooms/8/0.jpg",
       "/images/rooms/8/1.jpg",
       "/images/rooms/8/2.jpg",
-      "/images/rooms/8/3.jpg",
-      "/images/rooms/8/4.jpg",
-      "/images/rooms/8/5.jpg"
+      "/images/rooms/8/3.jpg"
     ]
   },
   {
@@ -131,22 +112,20 @@
       "/images/rooms/9/1.jpg",
       "/images/rooms/9/2.jpg",
       "/images/rooms/9/3.jpg",
-      "/images/rooms/9/4.jpg",
-      "/images/rooms/9/5.jpg"
+      "/images/rooms/9/4.jpg"
     ]
   },
   {
     "id": 10,
-    "image": "/images/rooms/9/0.jpg",
+    "image": "/images/rooms/10/0.jpg",
     "price": "800.00 грн",
     "places": "3",
     "images": [
-      "/images/rooms/9/0.jpg",
-      "/images/rooms/9/1.jpg",
-      "/images/rooms/9/2.jpg",
-      "/images/rooms/9/3.jpg",
-      "/images/rooms/9/4.jpg",
-      "/images/rooms/9/5.jpg"
+      "/images/rooms/10/0.jpg",
+      "/images/rooms/10/1.jpg",
+      "/images/rooms/10/2.jpg",
+      "/images/rooms/10/3.jpg",
+      "/images/rooms/10/4.jpg"
     ]
   }
 ]
